@@ -45,7 +45,7 @@ public class MovieBoardController {
             @RequestParam(required = false) String searchCate,
             @RequestParam(required = false) String searchTitle
     ) throws Exception {
-        ModelAndView mv = new ModelAndView("/movie/movieList");
+        ModelAndView mv = new ModelAndView("movie/movieList");
 
         Page<MovieBoardEntity> movieBoardList;
 
@@ -123,13 +123,13 @@ public class MovieBoardController {
 
         MovieEntity movieEntity = movieService.selectMovieById(id);
 
-        mv.setViewName("/movie/movieInfo");
+        mv.setViewName("movie/movieInfo");
         return mv;
     }
 
     @GetMapping("/{movieBoardId}/rating")
     public String writeMovieRating() throws Exception {
-        return "/movie/movieinfo/{movieBoardId}";
+        return "movie/movieinfo/{movieBoardId}";
     }
 
     @PostMapping("/{movieBoardId}/rating/{userId}")

@@ -16,14 +16,14 @@
 <body>
 
 <!-- header -->
-<header th:replace="~{/layout/header::header}"></header>
+<header th:replace="~{layout/header::header}"></header>
 <!-- header END -->
 
 <main class="container mt-5">
     <section>
         <div class="row">
             <div class="col-sm mx-auto">
-                <form id="frm" action="/board/write" method="post">
+                <form id="frm" action="board/write" method="post">
                     <!-- 제목 -->
                     <div class="mb-3">
                         <label for="wr_subject" class="form-label">제목 <strong>필수</strong></label>
@@ -83,6 +83,6 @@
 </main>
 
 <!-- Footer -->
-<footer th:replace="~{/layout/footer::footer}"></footer>
+<footer th:replace="~{layout/footer::footer}"></footer>
 </body>
 </html>

@@ -29,7 +29,7 @@
 </script>
 
 <body class="d-flex flex-column min-vh-100">
-<header th:replace="~{/layout/header::header}"></header>
+<header th:replace="~{layout/header::header}"></header>
 
 <main class="flex-grow-1 d-flex align-items-center justify-content-center">
     <input type="hidden" th:value="${error}" id="error">
@@ -39,7 +39,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title mb-3 text-center">비밀번호 찾기</h4>
-                        <form method="post" action="/findPassword" name="post">
+                        <form method="post" action="findPassword" name="post">
                             <div class="mb-3">
                                 <label for="email" class="form-label">이메일 주소</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="이메일을 입력하세요" required>
@@ -50,13 +50,13 @@
                             </div>
                             <button type="submit" class="btn btn-primary w-100">비밀번호 찾기</button>
                         </form>
-                        <button type="button" class="btn btn-secondary w-100 mt-3" onclick="window.location.href='/login'">로그인으로 돌아가기</button>
+                        <button type="button" class="btn btn-secondary w-100 mt-3" onclick="window.location.href='login'">로그인으로 돌아가기</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
-<footer th:replace="~{/layout/footer::footer}"></footer>
+<footer th:replace="~{layout/footer::footer}"></footer>
 </body>
 </html>

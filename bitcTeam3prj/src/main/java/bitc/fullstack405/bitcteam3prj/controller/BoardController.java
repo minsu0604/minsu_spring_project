@@ -25,7 +25,7 @@ public class BoardController {
     public ModelAndView selectBoardList(
             @PageableDefault(size=10, sort="createdAt") Pageable pageable
     ) throws Exception {
-        ModelAndView mv = new ModelAndView("/board/boardList");
+        ModelAndView mv = new ModelAndView("board/boardList");
 
 //        List<BoardEntity> boardList = boardService.selectBoardList();
 
@@ -90,7 +90,7 @@ public class BoardController {
 //    게시판 검색
     @GetMapping("/search")
     public ModelAndView findAllByTitle(String searchString) throws Exception {
-        ModelAndView mv = new ModelAndView("/board/boardList");
+        ModelAndView mv = new ModelAndView("board/boardList");
         Optional<BoardEntity> board =  boardService.findAllByTitle(searchString);
         mv.addObject("board" , board);
 

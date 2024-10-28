@@ -56,7 +56,7 @@ public class UserController {
     mv.addObject("userId", userId);
     mv.addObject("cookieCheck", cookieCheck);
 
-    mv.setViewName("/login/Login");
+    mv.setViewName("login/Login");
 
     return mv;
   }
@@ -122,7 +122,7 @@ public class UserController {
   public ModelAndView signIn(@RequestParam(required = false, value = "error") String error) throws Exception {
     ModelAndView mv = new ModelAndView();
 
-    mv.setViewName("/login/signIn");
+    mv.setViewName("login/signIn");
 
     if (error != null) {
       mv.addObject("error", error);
@@ -168,7 +168,7 @@ public class UserController {
       mv.addObject("error", error);
     }
 
-    mv.setViewName("/login/findUserPw");
+    mv.setViewName("login/findUserPw");
 
     return mv;
   }
@@ -257,7 +257,7 @@ public class UserController {
       mv.addObject("error", error);
     }
 
-    mv.setViewName("/login/findUserId");
+    mv.setViewName("login/findUserId");
 
     return mv;
   }
@@ -278,7 +278,7 @@ public class UserController {
     if (userEntity != null && email.equals(userEntity.getEmail()) && userPw.equals(userEntity.getUserPw())) {
       if (userEntity.getDeletedYn() == 'N') {
         mv.addObject("userId", userEntity.getUserId());
-        mv.setViewName("/login/foundUserId");
+        mv.setViewName("login/foundUserId");
       }
       else {
         mv.setViewName("redirect:/findId?error=signOutUser");
@@ -316,18 +316,18 @@ public class UserController {
           mv.addObject("userInfo", userEntity);
           if (session.getAttribute("userId").equals(userId)) { // 자신의 프로필인지 타인의 프로필인지 확인
             mv.addObject("me", true);
-            mv.setViewName("/user/myProfile");
+            mv.setViewName("user/myProfile");
           }
           else if (!session.getAttribute("userId").equals(userId)) {
             mv.addObject("me", false);
-            mv.setViewName("/user/myProfile");
+            mv.setViewName("user/myProfile");
           }
         }
         else if (userEntity.getDeletedYn() == 'Y') {
           mv.addObject("me", false);
           mv.addObject("signOutUserMsg", "(탈퇴한 회원)");
-          mv.addObject("profileImage", "/image/DefaultProfileImage.jpg");
-          mv.setViewName("/user/myProfile");
+          mv.addObject("profileImage", "image/DefaultProfileImage.jpg");
+          mv.setViewName("user/myProfile");
         }
       }
       else {

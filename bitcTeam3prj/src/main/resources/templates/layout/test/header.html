@@ -17,7 +17,7 @@
         <!-- Left Side: Logo and Navigation Links -->
         <div class="d-flex align-items-center">
             <!-- Logo -->
-            <a href="/static" class="d-flex align-items-center text-white text-decoration-none me-3">
+            <a href="static" class="d-flex align-items-center text-white text-decoration-none me-3">
                 <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
@@ -25,9 +25,9 @@
 
             <!-- Navigation Links -->
             <ul class="nav d-flex align-items-center mb-2 mb-lg-0">
-                <li><a href="/home" class="nav-link px-2 text-secondary">Home</a></li>
-                <li><a href="/movie/" class="nav-link px-2 text-white">영화정보</a></li>
-                <li><a href="/board/" class="nav-link px-2 text-white">자유게시판</a></li>
+                <li><a href="home" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="movie/" class="nav-link px-2 text-white">영화정보</a></li>
+                <li><a href="board/" class="nav-link px-2 text-white">자유게시판</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">자주하는질문</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">About</a></li>
             </ul>
@@ -42,9 +42,9 @@
             <form class="d-flex me-3">
                 <input type="search" class="form-control form-control-dark" placeholder="검색..." aria-label="Search">
             </form>
-            <a href="/login" class="btn btn-outline-light btn-sm me-3" th:if="${session.userId} == null">로그인</a>
-            <a href="/signIn" class="btn btn-warning btn-sm me-3" th:if="${session.userId} == null">회원가입</a>
-            <a href="/logout" class="btn btn-danger btn-sm me-3" th:unless="${session.userId} == null">로그아웃</a>
+            <a href="login" class="btn btn-outline-light btn-sm me-3" th:if="${session.userId} == null">로그인</a>
+            <a href="signIn" class="btn btn-warning btn-sm me-3" th:if="${session.userId} == null">회원가입</a>
+            <a href="logout" class="btn btn-danger btn-sm me-3" th:unless="${session.userId} == null">로그아웃</a>
         </div>
         <!-- Offcanvas Sidebar -->
 
@@ -65,7 +65,7 @@
             </div>
         </div>
         <!-- Toggle Button (Ensure this button or link is placed where it will open the offcanvas) -->
-        <a href="#" class="btn btn-outline-light" type="button" th:href="@{|/profile/${session.userId}|}" th:unless="${session.userId} == null">
+        <a href="#" class="btn btn-outline-light" type="button" th:href="@{|profile/${session.userId}|}" th:unless="${session.userId} == null">
             마이페이지
         </a>
     </div>

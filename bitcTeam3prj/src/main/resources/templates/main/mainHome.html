@@ -71,7 +71,7 @@
 </head>
 
 <body>
-<header th:replace="~{/layout/header::header}"></header>
+<header th:replace="~{layout/header::header}"></header>
 <div>
 <!-- Carousel -->
 <!--<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">-->
@@ -116,9 +116,9 @@
             <div class="multi-carousel-inner">
                 <div th:each="showing : ${showingMovieList}" class="item" style="height: 450px;">
                     <div style="height: 550px;">
-                        <a th:href="@{|/movie/movieinfo/${showing.id}|}">
+                        <a th:href="@{|movie/movieinfo/${showing.id}|}">
                             <img th:src="${!#strings.isEmpty(showing.posterImageName)}
-                            ? @{|/image/${showing.posterImageName}.jpg|}
+                            ? @{|image/${showing.posterImageName}.jpg|}
                             : 'https://dummyimage.com/300X450/ced4da/6c757d'"
                                  style="height:100%; width:95%;"
                             >
@@ -146,11 +146,11 @@
                 <div class="card h-100 shadow border-0">
                     <img
                             class="card-img-top"
-                            th:src="${!#strings.isEmpty(recommended.posterImageName)} ? @{|/image/${recommended.posterImageName}.jpg|} : 'https://dummyimage.com/600x350/ced4da/6c757d'"
+                            th:src="${!#strings.isEmpty(recommended.posterImageName)} ? @{|image/${recommended.posterImageName}.jpg|} : 'https://dummyimage.com/600x350/ced4da/6c757d'"
                             th:alt="${recommended.movieName}"
                     >
                     <div class="card-body p-4">
-                        <a class="text-decoration-none link-dark stretched-link" th:href="@{|/movie/movieinfo/${recommended.id}|}"><h5 class="card-title mb-3" th:text="${recommended.movieName}">영화 title</h5></a>
+                        <a class="text-decoration-none link-dark stretched-link" th:href="@{|movie/movieinfo/${recommended.id}|}"><h5 class="card-title mb-3" th:text="${recommended.movieName}">영화 title</h5></a>
                         <p class="card-text mb-0">영화 장르 ,줄거리</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -271,7 +271,7 @@
                             th:each="movieBoard : ${movieBoardLatestList}"
                             class="list-group-item d-flex align-items-center">
                             <div class="text">
-                                <a th:href="@{|/movie/movieinfo/${movieBoard.id}|}">
+                                <a th:href="@{|movie/movieinfo/${movieBoard.id}|}">
                                     <h3 class="h5" th:text="${movieBoard.movie.movieName}">Lorem Ipsum Dolor</h3>
                                 </a>
                                 <small>.Posted on 5th June 2017 by Aria Smith</small>
@@ -392,7 +392,7 @@
     </div>
 </div>
 <!-- Footer -->
-<footer th:replace="~{/layout/footer::footer}"></footer>
+<footer th:replace="~{layout/footer::footer}"></footer>
 
 </body>
 </html>

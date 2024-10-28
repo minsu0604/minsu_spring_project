@@ -29,7 +29,7 @@ public class HomeController {
 
     @GetMapping({"", "/", "/home", "/Home"})
     private ModelAndView mainHome() throws Exception{
-        ModelAndView mv = new ModelAndView("/main/mainHome");
+        ModelAndView mv = new ModelAndView("main/mainHome");
 
         List<MovieEntity> movieList = movieService.selectMovieList();
         List<BoardEntity> boardList = boardService.selectBoardList();

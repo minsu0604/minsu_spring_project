@@ -36,7 +36,7 @@ public class UserBoardController {
     //    유저가 작성한 게시글 리스트
     @GetMapping("/{userId}")
     public ModelAndView userBoardList(@PathVariable("userId") Long userId) throws Exception {
-        ModelAndView mv = new ModelAndView("/board/");
+        ModelAndView mv = new ModelAndView("board/");
         List<BoardEntity> boardList = boardService.userBoardList(userId);
         mv.addObject("boardList" , boardList);
 
@@ -46,7 +46,7 @@ public class UserBoardController {
     //    유저가 비/추천한 게시글 리스트
     @GetMapping("/boardLike/{userId}")
     public ModelAndView userLikeBoardList(@PathVariable("userId") Long userId) throws Exception {
-        ModelAndView mv = new ModelAndView("/board/");
+        ModelAndView mv = new ModelAndView("board/");
         List<BoardEntity> boardList = boardService.userLikeBoardList(userId);
         mv.addObject("boardList" , boardList);
 

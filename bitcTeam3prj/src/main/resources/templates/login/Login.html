@@ -40,7 +40,7 @@
 </head>
 <body class=" d-flex flex-column min-vh-100">
 <!-- header -->
-<header th:replace="~{/layout/header::header}"></header>
+<header th:replace="~{layout/header::header}"></header>
 <!-- header END -->
 
 <main class="container mt-5 flex-grow-1 ">
@@ -65,12 +65,12 @@
             <button type="submit" class="btn btn-primary w-100">로그인</button>
             <div class="text-center mt-3">
                 <span style="font-size: 15px;">
-                    <a href="/signIn" class="text-decoration-none text-secondary">회원가입</a>
+                    <a href="signIn" class="text-decoration-none text-secondary">회원가입</a>
                 </span>
             </div>
             <div class="text-center mt-3">
                 <span style="font-size: 15px;">
-                    <a href="/findId" class="text-decoration-none text-secondary" >ID</a> / <a href="/findPassword" class="text-decoration-none text-secondary">비밀번호</a> 를 잊으셨나요?
+                    <a href="findId" class="text-decoration-none text-secondary" >ID</a> / <a href="findPassword" class="text-decoration-none text-secondary">비밀번호</a> 를 잊으셨나요?
                 </span>
             </div>
         </form>
@@ -78,6 +78,6 @@
 </main>
 
 <!-- Footer -->
-<footer th:replace="~{/layout/footer::footer}"></footer>
+<footer th:replace="~{layout/footer::footer}"></footer>
 </body>
 </html>
