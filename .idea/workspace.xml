@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e9ec172-d034-4a23-b027-09f2f2818f55" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/config/WebMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/config/WebMVCConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/MovieBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/MovieBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/UserBoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/UserBoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/constant/BoardCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/constant/BoardCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/constant/MovieCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/constant/MovieCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/entity/BoardEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/entity/ManagerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/entity/ManagerEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/BoardCommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/BoardCommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/BoardLikeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/BoardLikeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/MovieBoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/database/repository/MovieBoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/inteceptor/LoginCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/inteceptor/LoginCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieBoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieBoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieBoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieLikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieLikeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieLikeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/MovieLikeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardDetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardList.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardWrite.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/board/boardWrite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/Login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/Login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/changeUserPw.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/changeUserPw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/findUserId.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/findUserId.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/findUserPw.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/findUserPw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/signIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/tmp/change-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/tmp/change-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/tmp/findUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/tmp/findUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/tmp/forgot_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/login/tmp/forgot_password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/main/mainHome.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/main/mainHome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/movie/movieInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/movie/movieInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/movie/movieList.html" beforeDir="false" afterPath="$PROJECT_DIR$/bitcTeam3prj/src/main/resources/templates/movie/movieList.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/bitcTeam3prj">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/bitcTeam3prj/build.gradle">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bitcTeam3prj" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;moranengyo&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PunkidSH/bitcTeam3prj&quot;,
+    &quot;accountId&quot;: &quot;0169c96e-cd99-4b61-87f6-5aac1d2db583&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2je3LMzHOnHvwSBIRd7Aide7Ad7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.Build bitcTeam3prj.executor": "Run",
+    "Gradle.C:/fullstack405/spring/team3/bitcTeam3prj/build.gradle.executor": "Run",
+    "Gradle.bitcTeam3prj 빌드.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BitcTeam3prjApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/Documents/minsu_spring_project!!/bitcTeam3prj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\fullstack405\spring\team3\bitcTeam3prj\src\main\resources" />
+      <recent name="C:\fullstack405\spring\team3\bitcTeam3prj\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\minsu_spring_project!!\bitcTeam3prj" />
+      <recent name="C:\fullstack405\temp\bitcTeam3prj\src\main\resources\templates\movie" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BitcTeam3prjApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="bitc.fullstack405.bitcTeam3prj.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="bitc.fullstack405.bitcteam3prj.BitcTeam3prjApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e9ec172-d034-4a23-b027-09f2f2818f55" name="Changes" comment="" />
+      <created>1721733658306</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721733658306</updated>
+      <workItem from="1721733659367" duration="15000" />
+      <workItem from="1721783806605" duration="26789000" />
+      <workItem from="1721864281717" duration="8581000" />
+      <workItem from="1721873574256" duration="6835000" />
+      <workItem from="1721884944699" duration="2620000" />
+      <workItem from="1721887610074" duration="12425000" />
+      <workItem from="1721951443568" duration="14115000" />
+      <workItem from="1722060866280" duration="3819000" />
+      <workItem from="1722067306112" duration="1995000" />
+      <workItem from="1722213870209" duration="36560000" />
+      <workItem from="1730190697390" duration="329000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/bitcTeam3prj/src/main/java/bitc/fullstack405/bitcteam3prj/controller/MovieBoardController.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

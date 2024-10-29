@@ -8,6 +8,7 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Entity
@@ -34,12 +35,20 @@ public class BoardEntity extends BaseEntity{
     @Column(nullable = false)
     private String category; // 카테고리
 
-    @Column(nullable = false)
-    private String warning; // 주의
+     private String warning; // 주의
 
 
     @ManyToOne
     @JoinColumn(name="user_id")
     @ToString.Exclude
     private UserEntity user;
+
+
+    @OneToMany(mappedBy = "board", cascade = CascadeType.ALL)
+    @ToString.Exclude
+    private List<BoardCommentEntity> commentList;
+
+    @ToString.Exclude
+    @OneToMany(mappedBy = "board", cascade = CascadeType.ALL)
+    List<BoardLikeEntity> boardLikeList;
 }
