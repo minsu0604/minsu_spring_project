@@ -104,7 +104,7 @@
               <img
                    th:src="${#strings.isEmpty(movie.movie.posterImageName)} ?
                    'https://www.bootdey.com/image/550x380/FFB6C1/000000' :
-                    @{|image/${movie.movie.posterImageName}.jpg|}"
+                    @{|/image/${movie.movie.posterImageName}.jpg|}"
                    alt="Product image"
                    class="img-fluid">
             </div>
@@ -147,7 +147,7 @@
     </div>
   </div>
   <!--           북마크 추가   -->
-  <form id="add-like-frm" method="post" th:action="@{|user/boardMovieBookmark/${session.userId}/${movie.movie.id}|}">
+  <form id="add-like-frm" method="post" th:action="@{|/user/boardMovieBookmark/${session.userId}/${movie.movie.id}|}">
     <input type="hidden" id="user-id" name="userId" th:value="${session.userId}">
     <input type="hidden" id="movie-id" name="movieId" th:value="${movie.movie.id}">
     <div class="d-flex justify-content-end mx-auto">
@@ -176,7 +176,7 @@
 
 <!--    평점 입력 form    -->
 
-        <form id="create-frm" method="post" th:action="@{|movie/${movieBoardId}/rating/${session.userId}|}">
+        <form id="create-frm" method="post" th:action="@{|/movie/${movieBoardId}/rating/${session.userId}|}">
           <input type="hidden" name="board-id" th:value="${movie.id}">
           <h4 class="mb-5 fw-bold">관람평</h4>
           <div class="mt-2">

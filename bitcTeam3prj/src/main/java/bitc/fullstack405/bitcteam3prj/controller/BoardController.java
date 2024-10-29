@@ -67,7 +67,7 @@ public class BoardController {
     public String insertBoard(BoardEntity board) throws Exception {
         boardService.insertBoard(board);
 
-        return "redirect:/board/boardList";
+        return "redirect:board/boardList";
     }
 
 //    게시물 삭제
@@ -75,7 +75,7 @@ public class BoardController {
     public String deleteBoard(@PathVariable("boardId") long boardId) throws Exception {
         boardService.deleteBoardById(boardId);
 
-        return "redirect:/board/boardList";
+        return "redirect:board/boardList";
     }
 
 //    게시글 수정
@@ -84,7 +84,7 @@ public class BoardController {
         board.setId(boardId);
         boardService.updateBoard(board);
 
-        return "redirect:/board/boardList";
+        return "redirect:board/boardList";
     }
 
 //    게시판 검색

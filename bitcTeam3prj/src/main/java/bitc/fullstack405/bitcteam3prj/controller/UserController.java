@@ -91,10 +91,10 @@ public class UserController {
 
       session.setMaxInactiveInterval(60 * 60 * 1);
 
-      mv.setViewName("redirect:/home");
+      mv.setViewName("redirect:home");
     }
     else {
-      mv.setViewName("redirect:/login?error=loginFailed");
+      mv.setViewName("redirect:login?error=loginFailed");
     }
 
     return mv;
@@ -106,7 +106,7 @@ public class UserController {
   @RequestMapping("/logout")
   public ModelAndView logout(HttpServletRequest req) throws Exception {
     ModelAndView mv = new ModelAndView();
-    mv.setViewName("redirect:/login");
+    mv.setViewName("redirect:login");
     HttpSession session = req.getSession();
 
     session.removeAttribute("userId");
@@ -143,18 +143,18 @@ public class UserController {
         if (userService.userIdCheck(userId) == 0) {
           if (userService.userEmailCheck(email) == 0) {
             userService.insertUser(userEntity);
-            mv.setViewName("redirect:/login");
+            mv.setViewName("redirect:login");
           }
           else {
-            mv.setViewName("redirect:/signIn?error=existEmail");
+            mv.setViewName("redirect:signIn?error=existEmail");
           }
         }
         else {
-          mv.setViewName("redirect:/signIn?error=existId");
+          mv.setViewName("redirect:signIn?error=existId");
         }
       }
       else {
-        mv.setViewName("redirect:/signIn?error=pwChk");
+        mv.setViewName("redirect:signIn?error=pwChk");
       }
     return mv;
   }
@@ -185,25 +185,25 @@ public class UserController {
           if (entity.getDeletedYn() == 'N') {
             mv.addObject("userId", entity.getUserId());
             mv.addObject("email", entity.getEmail());
-            mv.setViewName("redirect:/changePassword");
+            mv.setViewName("redirect:changePassword");
           }
           else {
-            mv.setViewName("redirect:/findPassword?error=signOutUser");
+            mv.setViewName("redirect:findPassword?error=signOutUser");
           }
         }
         else {
-          mv.setViewName("redirect:/findPassword?error=notFoundUser");
+          mv.setViewName("redirect:findPassword?error=notFoundUser");
         }
       }
       else {
-        mv.setViewName("redirect:/findPassword?error=notFoundUser");
+        mv.setViewName("redirect:findPassword?error=notFoundUser");
       }
     }
     catch (NullPointerException e) {
-      mv.setViewName("redirect:/findPassword?error=notFoundUser");
+      mv.setViewName("redirect:findPassword?error=notFoundUser");
     }
     catch (Exception e) {
-      mv.setViewName("redirect:/findPassword?error=error");
+      mv.setViewName("redirect:findPassword?error=error");
     }
 
     return mv;
@@ -234,14 +234,14 @@ public class UserController {
     if (userEntity.getDeletedYn() == 'N') {
       if (userPw.equals(userPwChk)) {
         userService.updateUserPw(userId, userPw);
-        mv.setViewName("redirect:/login");
+        mv.setViewName("redirect:login");
       }
       else {
-        mv.setViewName("redirect:/changePassword?error=pwChk");
+        mv.setViewName("redirect:changePassword?error=pwChk");
       }
     }
     else {
-      mv.setViewName("redirect:/changePassword?error=signOutUser");
+      mv.setViewName("redirect:changePassword?error=signOutUser");
     }
 
     return mv;
@@ -281,11 +281,11 @@ public class UserController {
         mv.setViewName("login/foundUserId");
       }
       else {
-        mv.setViewName("redirect:/findId?error=signOutUser");
+        mv.setViewName("redirect:findId?error=signOutUser");
       }
     }
     else {
-        mv.setViewName("redirect:/findId?error=notFoundUser");
+        mv.setViewName("redirect:findId?error=notFoundUser");
     }
 
     return mv;
@@ -331,11 +331,11 @@ public class UserController {
         }
       }
       else {
-        mv.setViewName("redirect:/home?error=notFoundUser");
+        mv.setViewName("redirect:home?error=notFoundUser");
       }
     }
     else {
-      mv.setViewName("redirect:/login");
+      mv.setViewName("redirect:login");
     }
     return mv;
   }
@@ -355,26 +355,26 @@ public class UserController {
           if(session.getAttribute("userId").equals(userEntity.getUserId())) {
             if (changePw.equals(changePwChk)) {
               userService.updateUserPw((String)session.getAttribute("userId"), changePw);
-              mv.setViewName("redirect:/profile/" + userEntity.getUserId());
+              mv.setViewName("redirect:profile/" + userEntity.getUserId());
             }
             else {
-              mv.setViewName("redirect:/profile/" + userEntity.getUserId() + "?error=pwChk");
+              mv.setViewName("redirect:profile/" + userEntity.getUserId() + "?error=pwChk");
             }
           }
           else {
-            mv.setViewName("redirect:/profile/" + userEntity.getUserId() + "?error=notYourProfile");
+            mv.setViewName("redirect:profile/" + userEntity.getUserId() + "?error=notYourProfile");
           }
         }
         else {
-          mv.setViewName("redirect:/profile/" + userEntity.getUserId() + "?error=pwNotMatch");
+          mv.setViewName("redirect:profile/" + userEntity.getUserId() + "?error=pwNotMatch");
         }
       }
       else {
-        mv.setViewName("redirect:/main?error=signOutUser");
+        mv.setViewName("redirect:main?error=signOutUser");
       }
     }
     else if (session.getAttribute("userId") != null) {
-      mv.setViewName("redirect:/login");
+      mv.setViewName("redirect:login");
     }
     return mv;
   }
@@ -393,7 +393,7 @@ public class UserController {
     HttpSession session = req.getSession();
 
 
-    mv.setViewName("redirect:/profile/" + session.getAttribute("userId"));
+    mv.setViewName("redirect:profile/" + session.getAttribute("userId"));
 
     return mv;
   }
@@ -417,15 +417,15 @@ public class UserController {
           mv.setViewName("redirect:/");
         }
         else {
-          mv.setViewName("redirect:/login?error=alrdyOutUser");
+          mv.setViewName("redirect:login?error=alrdyOutUser");
         }
       }
       else {
-        mv.setViewName("redirect:/profile/" + userEntity.getUserId() + "?error=pwChk");
+        mv.setViewName("redirect:profile/" + userEntity.getUserId() + "?error=pwChk");
       }
     }
     else {
-      mv.setViewName("redirect:/login");
+      mv.setViewName("redirect:login");
     }
     return mv;
   }
@@ -443,7 +443,7 @@ public class UserController {
     userService.insertUserProfileImg(userId, req, resp);
 
 
-    mv.setViewName("redirect:/profile/" + userId);
+    mv.setViewName("redirect:profile/" + userId);
 
     return mv;
   }
@@ -457,7 +457,7 @@ public class UserController {
 
     userService.deleteProfileImg((String)session.getAttribute("userId"));
 
-    mv.setViewName("redirect:/profile/" + session.getAttribute("userId"));
+    mv.setViewName("redirect:profile/" + session.getAttribute("userId"));
 
     return mv;
 
