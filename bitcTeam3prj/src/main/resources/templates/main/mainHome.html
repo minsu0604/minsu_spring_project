@@ -327,7 +327,7 @@
                     <ul class="list-group mt-3" th:if="${#lists.size(publicBoardLatestList)} > 0" th:remove="all-but-first">
                         <li class="list-group-item d-flex align-items-center" th:each="publicBoard : ${publicBoardLatestList}">
                             <div class="text">
-                                <a href="#" th:href="@{|board/${publicBoard.id}|}">
+                                <a href="#" th:href="@{|/board/${publicBoard.id}|}">
                                     <h3 class="h5" th:text="${publicBoard.title}">Lorem Ipsum Dolor</h3>
                                 </a>
                                 <small th:text="'작성자 : ' + ${publicBoard.user.userId} + ' / ' ">ddd</small>
