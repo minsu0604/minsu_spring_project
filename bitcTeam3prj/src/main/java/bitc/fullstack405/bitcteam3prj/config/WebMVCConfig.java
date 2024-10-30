@@ -32,7 +32,7 @@ public class WebMVCConfig implements WebMvcConfigurer {
     //mac, linux 는 file://
     String path1 = "file:///" + fileUtil.getSaveFilePath();
 
-    registry.addResourceHandler("/imgs/**")
+    registry.addResourceHandler("imgs/**")
             .addResourceLocations(path1);
 
 

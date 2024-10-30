@@ -158,7 +158,7 @@ public class BoardController {
 
         boardService.insertBoard(board);
 
-        return "redirect:board/";
+        return "redirect:/board/";
     }
 
 
@@ -169,7 +169,7 @@ public class BoardController {
     public String deleteBoard(@PathVariable("boardId") long boardId) throws Exception {
         boardService.deleteBoardById(boardId);
 
-        return "redirect:board/";
+        return "redirect:/board/";
     }
 
 //    게시글 수정
@@ -182,7 +182,7 @@ public class BoardController {
 
         boardService.updateBoard(board);
 
-        return "redirect:board/" + boardId;
+        return "redirect:/board/" + boardId;
     }
 
 

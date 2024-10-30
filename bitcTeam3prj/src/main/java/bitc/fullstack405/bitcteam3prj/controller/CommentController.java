@@ -40,7 +40,7 @@ public class CommentController {
 
         boardCommentService.boardCommentWrite(comment);
 
-        return "redirect:board/" + boardId;
+        return "redirect:/board/" + boardId;
     }
 
     //    게시판 댓글 수정
@@ -50,7 +50,7 @@ public class CommentController {
         board.setContents(contents);
         boardCommentService.boardCommentUpdate(board);
 
-        return "redirect:board/boardDetail";
+        return "redirect:/board/boardDetail";
     }
 
     //    게시판 댓글 삭제
@@ -58,7 +58,7 @@ public class CommentController {
     public String boardCommentDelete(@PathVariable("commentId") Long boardId) throws Exception {
         boardCommentService.boardCommentDelete(boardId);
 
-        return "redirect:board/boardList";
+        return "redirect:/board/boardList";
     }
 
     @PostMapping("/myprofile/{commentId}")

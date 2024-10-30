@@ -131,7 +131,7 @@ public class UserBoardController {
             movieLikeService.deleteLike(user.getId(), movieId);
         }
 
-        return "redirect:movie/movieinfo/" + movieId;
+        return "redirect:/movie/movieinfo/" + movieId;
     }
 
 

@@ -128,7 +128,7 @@ public class MovieBoardController {
 
     @GetMapping("/{movieBoardId}/rating")
     public String writeMovieRating() throws Exception {
-        return "movie/movieinfo/{movieBoardId}";
+        return "/movie/movieinfo/{movieBoardId}";
     }
 
     @PostMapping("/{movieBoardId}/rating/{userId}")
@@ -143,7 +143,7 @@ public class MovieBoardController {
 
         ratingService.insertRating(ratingEntity);
 
-        return "redirect:movie/movieinfo/" + movieBoardId;
+        return "redirect:/movie/movieinfo/" + movieBoardId;
     }
 
 
@@ -162,7 +162,7 @@ public class MovieBoardController {
 
         ratingService.updateRating(ratingEntity);
 
-        return "redirect:movie/movieinfo/" + movieBoardId;
+        return "redirect:/movie/movieinfo/" + movieBoardId;
     }
 
     @PostMapping("/movieinfo/delete/{movieBoardRatingId}")
@@ -172,7 +172,7 @@ public class MovieBoardController {
 
         ratingService.deleteById(movieBoardRatingId);
 
-        return "redirect:movie/movieinfo/" + movieBoardId;
+        return "redirect:/movie/movieinfo/" + movieBoardId;
     }
 
 }
