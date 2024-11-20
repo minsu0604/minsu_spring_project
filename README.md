@@ -18,4 +18,4 @@
 <br>
 
 <h3>사용한 API</h3>
-<a href="(https://www.kmdb.or.kr/info/api/apiDetail/6)">한국 영화정보</a>
+<a href="https://www.kmdb.or.kr/info/api/apiDetail/6">한국 영화정보</a>
