@@ -51,3 +51,6 @@
 
 <h2>🔑 사용한 API</h2>
 <a href="https://www.kmdb.or.kr/info/api/apiDetail/6">한국 영화정보</a>
+
+<h2>시연 영상</h2>
+<a href="https://youtu.be/-g6KRwhQTaM">유튜브 링크</a>
