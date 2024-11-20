@@ -49,6 +49,10 @@
 ![js](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![js](https://img.shields.io/badge/Sourcetree-0052CC?style=for-the-badge&logo=Sourcetree&logoColor=white)
 
+<h1>🎢 레포지토리 기술 분포도</h1>
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)
+
 <h2>🔑 사용한 API</h2>
 <a href="https://www.kmdb.or.kr/info/api/apiDetail/6">한국 영화정보</a>
 
