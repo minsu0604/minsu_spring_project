@@ -19,5 +19,5 @@
 게시판 페이지 및 기능
 <br>
 
-<h3>사용한 API</h3>
+<h2>사용한 API</h2>
 <a href="https://www.kmdb.or.kr/info/api/apiDetail/6">한국 영화정보</a>
